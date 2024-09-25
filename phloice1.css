@@ -1,0 +1,382 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.logo {
+  position: relative;
+  left: -10px;
+}
+
+#header {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+  z-index: 1000;
+}
+
+#navbar {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+#navbar li {
+  list-style: none;
+  padding: 0 20px;
+  position: relative;
+}
+
+#navbar li a {
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+  transition: 0.3s ease;
+}
+
+#navbar li a:hover,
+#navbar li a.active {
+  color: green;
+}
+
+#navbar li a.active::after,
+#navbar li a.hover::after {
+  content: '';
+  width: 30%;
+  height: 2px;
+  background: green;
+  position: absolute;
+  bottom: -4px;
+  left: 20px;
+}
+
+#hero {
+  background-image: url('https://i.pinimg.com/474x/4c/bb/a5/4cbba5347c97bf948600309bb0ea9b75.jpg');
+  height: 109vh;
+  background-position: top 25% right 0;
+  font-size: 35px;
+  flex-direction: column;
+  background-repeat: no-repeat;
+}
+
+#hero h4 {
+  padding-bottom: 15px;
+}
+
+#hero h1 {
+  color: green;
+}
+
+#concernSection {
+  display: none;
+}
+
+button {
+  margin: 10px;
+  padding: 10px;
+  height: 200px;
+  width: 200px;
+  background-color: rgb(240, 236, 236);
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: bold;
+  color: rgb(69, 136, 74);
+}
+
+button:hover {
+  color: #809680;
+}
+
+#skin-type-button.description {
+  display: block;
+  font-size: 20px;
+  color: rgb(114, 179, 118);
+  left: 0;
+  right: 0;
+  bottom: 10px;
+  font-weight: 400;
+}
+
+#nextSkin {
+  width: 600px;
+  height: 60px;
+  font-family: Arial, sans-serif;
+  background-color: rgb(240, 236, 236);
+  color: rgb(69, 136, 74);
+  font-weight: bold;
+  font-size: 20px;
+}
+
+#hero h3 {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  font-size: 30px;
+}
+
+h6 {
+  font-size: 30px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button-container {
+  padding: 20px;
+  text-align: center;
+}
+
+button {
+  margin: 10px;
+  padding: 10px;
+  height: 200px;
+  width: 200px;
+  background-color: rgb(240, 236, 236);
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+  color: rgb(69, 136, 74);
+}
+
+#nextConcern {
+  width: 600px;
+  height: 60px;
+  font-family: Arial, sans-serif;
+  background-color: rgb(240, 236, 236);
+  color: rgb(69, 136, 74);
+  font-weight: bold;
+  font-size: 20px;
+}
+
+#product-section {
+  display: none;
+}
+.product-item {
+  display: none;
+}
+
+.product-item.show {
+  display: flex;
+}
+
+.product-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  padding-right: 20px;
+  margin: auto;
+  flex-wrap: wrap;
+  max-width: 100%;
+}
+
+.product-button {
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+
+.product-step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  max-width: 200px;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.product-image img {
+  width: 150px; /* Make the images responsive */
+  height: auto;
+}
+
+.product-details {
+  list-style: none;
+}
+
+.product-details ul {
+  color: green;
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+}
+
+.product-image img {
+  width: 150px; /* Make the images responsive */
+  height: auto;
+}
+
+.product-details {
+  list-style: none;
+}
+
+.product-details ul {
+  color: green;
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+}
+.product-button {
+  text-decoration: none;
+  display: inline-block;
+  margin: 10px;
+  border-radius: 5px;
+  background-color: rgb(240, 236, 236);
+}
+
+.product-button:hover {
+  color: #809680;
+}
+
+h7,
+h8,
+h9,
+h10,
+h11,
+h12,
+h13,
+h14,
+h15,
+h16,
+h17,
+h18,
+h19,
+h20,
+h21,
+h22,
+h23,
+h24,
+h25,
+h26,
+h27,
+h28,
+h29,
+h30,
+h31,
+h32,
+h33,
+h34,
+h35,
+h36 {
+  font-size: 20px;
+  font-weight: bold;
+  color: green;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.product-button:hover {
+  color: #809680;
+}
+
+.item-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 40px;
+  margin: auto;
+  flex-wrap: wrap;
+  max-width: 100%;
+  width: 100%;
+}
+
+.item {
+  display: flex;
+}
+
+.object-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.forever-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.pimples-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.blackheads-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.hyperpigmentation-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.general-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.cart {
+  height: 30px;
+  font-size: 15px;
+  color: black;
+  background-color: rgb(182, 182, 147);
+}
+
+h37,
+h38,
+h39,
+h40,
+h41,
+h42,
+h43,
+h44,
+h45,
+h46,
+h47,
+h48,
+h49,
+h50,
+h51,
+h52,
+h53,
+h54,
+h55,
+h56,
+h57,
+h58,
+h59,
+h60,
+h61 {
+  color: black;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  font-size: 15px;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+}
+
+.product-item-breakout-product {
+  justify-content: space-between;
+  align-items: flex-start;
+}
